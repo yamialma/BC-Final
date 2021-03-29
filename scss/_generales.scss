@@ -1,0 +1,36 @@
+$verde-oscuro: #004a52;
+$verde-claro: #64a19d;
+$naranja-oscuro: #f49351;
+$naranja-claro: #f1a674;
+$violeta-boharae: #40315e;
+$crema: #f7f7f7;
+$crema-claro:#f7e8e2;
+$gris-oscuro: #212529;
+$tw-50: rgba(255, 255, 255, 0.50);
+$tb-80: rgb(49, 49, 49);
+
+@mixin sizes ($w, $h) {
+    width: $w;
+    height: $h;
+}
+
+@mixin sizes2 ($m, $p) {
+    margin: $m;
+    padding: $p;
+}
+
+@font-face {
+    font-family: 'Bavista';
+    src: url(../font/Bavista_Soulare.ttf)
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #f7f7f7;
+}

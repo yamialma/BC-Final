@@ -1,0 +1,146 @@
+.header-cafe {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.5) 50%, #000000 100%), url("../assets/img/cafeterias-portada.jpg");
+    background-position: left;
+        .text-cafe {
+            grid-column: 1/-1;
+            text-align: center;
+            color: $crema;
+                .btn {
+                    margin-left: 0;
+                    width: auto;
+                }
+                h1{
+                    margin: 1rem;
+                    text-transform: uppercase;
+                }
+                p {
+                    padding: 0 40px;
+                }
+        }
+}
+
+.servicios-cafe {
+    height: auto;
+    padding-top: 80px;
+}
+
+.items-locales {
+    grid-column: 1/-1;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+}
+
+.item-local {
+    background-color: #f7f7f7;
+    width: 30%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    height: auto;
+    text-align: center;
+        h3 {
+            font-size: 1.25rem;
+            color: $tb-80;
+        }
+        img {
+            height: 100%;
+            width: 100%;
+        }
+        p {
+            line-height: 1.5rem;
+            color: $tb-80;
+        }
+        .btn {
+            margin: 2rem 0 3rem 0;
+        }
+}
+
+.section-cafe {
+    padding: 4rem 0;
+    height: 100%;
+}
+
+.txt-cafe {
+    grid-column: 1/5;
+    grid-row: 1/-1;
+}
+
+.texto-cafe {
+    h3 {
+        font-weight: 500;
+        font-size: 1.5rem;
+        color: $tb-80;
+    }
+    p {
+        padding-top: 10px;
+        color: $tb-80;
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+}
+
+.map-cafe {
+    grid-column: 5/13;
+    grid-row: 1/-1;
+}
+
+.featured-text-right {
+    padding: 0 1rem 0 0;
+    border-right: 0.4rem solid $verde-claro;
+    text-align: right;
+}
+
+@media screen and (max-width: 930px) {
+    .servicios-cafe {
+        padding-top: 40px;
+    }
+    .section-cafe {
+        padding-bottom: 3rem;
+        padding-top: 1rem;
+    }
+} 
+
+@media screen and (max-width: 900px) {
+    .item-local {
+        width: 46%;
+    }   
+}
+
+@media screen and (max-width: 767px) {
+    .item-local {
+        width: 66%;
+        .titulo-servicios {
+            margin: 10px 0;
+        }
+        p {
+            line-height: 1;
+        }
+        .btn {
+            margin: 1rem 0 1rem 0;
+        }
+    }
+    .txt-cafe {
+        grid-column: 1/-1;
+        grid-row: 1/-1;
+        padding-bottom: 10px;
+    }
+    .featured-text-right {
+        padding: 0 1rem 0 0;
+        border: none;
+        text-align: left;
+    }
+    .map-cafe {
+        grid-column: 1/-1;
+        grid-row: 2/3;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .item-local {
+        width: 75%;
+    }
+}

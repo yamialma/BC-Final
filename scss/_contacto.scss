@@ -1,0 +1,128 @@
+.header-contacto {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.5) 50%, #000000 100%), url("../assets/img/chica-cafe-nosotros.jpg");
+    background-position: center;
+        .text-cont {
+            grid-column: 1/-1;
+            text-align: center;
+            color: $crema;
+                .btn {
+                    margin-left: 0;
+                    width: auto;
+                }
+                h1{
+                    margin: 1rem;
+                }
+                p {
+                    padding: 0 40px;
+                }
+        }
+}
+
+// Formulario //
+.formulario-contacto {
+    margin: 6rem 10% 0rem 10%;
+    text-align: center;
+
+    h1 {
+        font-size: 2rem;
+        margin: 1rem;
+        text-transform: uppercase;
+    }
+
+    p {
+        margin: 2rem;
+        font-family: 'Quicksand';
+        font-size: 1.1rem;
+    }
+    .btn{
+        margin-left: 0;
+    }
+
+}
+
+.formulario {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: left;
+    margin-bottom: 4rem;
+
+    form {
+        @include sizes (60%, 2rem 20%);
+        font-family:'Quicksand';
+    }
+    .custom-control {
+        margin-bottom: 1rem;
+    }
+}
+
+// Contacto //
+.contact-section {
+    background-color: $verde-oscuro;
+    padding-top: 4rem;
+    .card-1 {
+        grid-column: 1/5;
+    }
+    .card-2 {
+        grid-column: 5/9;
+    }
+    .card-3 {
+        grid-column: 9/13;
+    }
+    .card {
+        margin: 1rem;
+        border: 0;
+        border-bottom: 0.25rem solid $verde-claro;
+            .card-body {
+                padding: 2rem;
+                width: 100%;
+            }
+    }
+    .text-primary {
+        color: $verde-claro !important;
+    }
+    h4 {
+        font-size: 0.8rem;
+        font-family: 'Quicksand';
+        text-transform: uppercase;
+        letter-spacing: 0.15rem;
+    }
+    hr {
+        border: $verde-claro;
+        border-width: 0.25rem;
+        width: 3rem;
+    }
+    a {
+        color: $naranja-oscuro;
+    }
+    a:hover {
+        color: $naranja-claro;
+    }
+}
+
+@media screen and (max-width:833px) {
+    .formulario-contacto {
+        margin: 4rem 5% 0rem 5%;
+        text-align: center;
+    }
+    .contact-section {
+        background-color: $verde-oscuro;
+        padding-top: 4rem;
+        .card-1 {
+            grid-column: 2/12;
+        }
+        .card-2 {
+            grid-column: 2/12;
+        }
+        .card-3 {
+            grid-column: 2/12;
+        }
+    }
+}
+
+@media screen and (max-width:430px) {
+    .formulario-contacto {
+        margin: 3rem 3% 0rem 3%;
+        text-align: center;
+    }
+}

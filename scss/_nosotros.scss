@@ -1,0 +1,108 @@
+.head {
+    padding-top: 110px;
+    height: 100vh;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.5) 50%, #000000 100%), url("../assets/img/portada-nosotros.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+.tit-head {
+    grid-column: 1/-1;
+    text-align: center;
+        h1 {
+            text-transform: uppercase;
+            font-size: 3.5rem;
+            font-weight: 500;
+            letter-spacing: 0.8rem;
+            background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.9));
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+                background-clip: text;
+        }
+        p {
+            color: $tw-50;
+            padding: 1rem 10rem;
+            font-size: 1.2rem;
+        }
+        .btn {
+            margin: 0;
+            font-family: "Varela Round";
+            text-transform: uppercase;
+            font-size: 80%;
+            letter-spacing: 0.15rem;
+        }
+
+}
+
+.servicios-nos {
+    height: auto;
+    background-color: $crema;
+    padding: 80px 0;
+    grid-column: 1/-1;
+    overflow: hidden;
+    /*background: linear-gradient(180deg, $crema 50%, $verde-oscuro 50%);*/
+        img {
+            width: 100%;
+        }
+}
+
+.serv-img {
+    grid-column: 1/7;
+    width: 100%;
+    height: 100%;   
+}
+.v2 {
+    grid-column: 7/13;
+    background-size: cover;
+    background-position: right;
+}
+.img-nos {
+    background-image: url(../assets/img/maquina-nosotros.jpg);
+    background-size: auto;
+}
+.img2-nos {
+    grid-row: 2/3;
+    background-image: url(../assets/img/chica-cafe-nosotros.jpg);
+}
+.img3-nos {
+    grid-row: 3/4;
+    background-image: url(../assets/img/chico-barista-nosotros.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.img4-nos {
+    grid-row: 4/5;
+    background-image: url(../assets/img/sucursal-2.jpg);
+}
+
+.serv-txt {
+    width: 100%;
+    height: 100%;
+    padding: 10rem 2rem;
+    color: $crema;
+        h3 {
+            font-size: 1.5rem;
+            margin: 1rem 0;
+        }
+        hr {
+            border-color: $verde-claro;
+            border-width: 0.25rem;
+            width: 30%;
+            margin-top: 1rem;
+            border-top: 1px solid $verde-claro;
+        }
+}
+.text-nos, .text3-nos {
+    grid-column: 7/13;
+    background-color: $violeta-boharae;
+}
+.text2-nos, .text4-nos {
+    grid-column: 1/7;
+    background-color: $verde-oscuro;
+    text-align: right;
+        hr {
+            margin-left: auto;
+        }
+}
